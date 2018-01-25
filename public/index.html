@@ -3,50 +3,84 @@
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	</head>
+	<link rel="stylesheet" href="style.css">
+  </head>
   <body>
     <div class="container">
       <div class="row">
 	    <div class="col">
+			<br/>
 			<form>
-				<div class="form-group" id="trucker"-->
+				<div class="informations alert alert-info form-group" id="trucker">
+				  <center><h4> Trucker properties </h4></center>
+				  <br/>
 				  <div class="row">
-					  <label for="TruckerName" class="col-4 col-form-label">Name</label>
-					  <div class="col-8">
+					  <label for="TruckerName" class="col-4 col-form-label labels">Name</label>
+					  <div class="col-6">
 						  <input class="form-control name" type="text" id="TruckerName" placeholder="Trucker name"/>
 					  </div>
 				  </div>
 				  <br/>
 				  <div class="row">
-					  <label for="PriceKM" class="col-4 col-form-label">The price by km</label>
-					  <div class="col-8">
+					  <label for="PriceKM" class="col-4 col-form-label labels">The price by km</label>
+					  <div class="col-6">
 						  <input class="form-control price-by-km" type="number" id="PriceKM" placeholder="Price by km"/>
 					  </div>
 				  </div>
 				  <br/>
 				  <div class="row">
-					  <label for="PriceM3" class="col-4 col-form-label">The price by m3</label>
-					  <div class="col-8">
-						  <input class="form-control price-by-cubic" type="number" id="PriceM3" placeholder="Price by m3"/>
+					  <label for="PriceM3" class="col-4 col-form-label labels">The price by m3</label>
+					  <div class="col-6">
+						  <input class="form-control price-by-cubic " type="number" id="PriceM3" placeholder="Price by m3"/>
 					  </div>
 				  </div>
 				</div>
 			</form>
 		</div>
 	    <div class="col">
+			<br/>
 			<form>
-				<div class="form-group" id="shipper">
-				  <input class="name" type="text" placeholder="Shipper name"/>
-				  <input class="distance" type="number" placeholder="Distance in km"/>
-				  <input class="volume" type="number" placeholder="Volume in m3"/>
-				  <input class="option" type="checkbox" placeholder="Deductible option"/>
+			   <div class="informations alert alert-info form-group" id="trucker">
+			   	  <center><h4> Shipper properties </h4></center>
+				  <br/>
+				  <div class="row">
+					  <label for="TruckerName" class="col-6 col-form-label labels">Name</label>
+					  <div class="col-6">
+						  <input class="form-control name" type="text" id="TruckerName" placeholder="Shipper name"/>
+					  </div>
+				  </div>
+				  <br/>
+				  <div class="row">
+					  <label for="Distance" class="col-6 col-form-label labels">The distance component</label>
+					  <div class="col-6">
+						  <input class="distance form-control price-by-km" type="number" id="distance" placeholder="Distance in km"/>
+					  </div>
+				  </div>
+				  <br/>
+				  <div class="row">
+					  <label for="Volume" class="col-6 col-form-label labels">The volume component</label>
+					  <div class="col-6">
+						  <input class="volume form-control price-by-cubic" type="number" id="volume" placeholder="Volume in m3"/>
+					  </div>
+				  </div>
+				  <br/>
+				  <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+					  <input type="checkbox" class="option custom-control-input" placeholder="Deductible option">
+					  <span class="custom-control-indicator"></span>
+					  <span class="custom-control-description labels">Deductible option</span>
+				  </label>
 				</div>
 			</form>
 		</div>
 	  </div>
 	</div>
-	<button id="compute" class="btn btn-primary">Compute</button>
-    <div id="actors"></div>
+	<br/>
+	<div class="form-group row">
+      <div class="offset-sm-5 col-sm-10" >
+	      <button id="compute" class="btn btn-primary" style="margin-left:53px;">Compute</button>
+      </div>
+    </div>
+    <div class="alert alert-success" id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
