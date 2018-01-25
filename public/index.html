@@ -2,22 +2,55 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
-  </head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	</head>
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
+    <div class="container">
+      <div class="row">
+	    <div class="col">
+			<form>
+				<div class="form-group" id="trucker"-->
+				  <div class="row">
+					  <label for="TruckerName" class="col-4 col-form-label">Name</label>
+					  <div class="col-8">
+						  <input class="form-control name" type="text" id="TruckerName" placeholder="Trucker name"/>
+					  </div>
+				  </div>
+				  <br/>
+				  <div class="row">
+					  <label for="PriceKM" class="col-4 col-form-label">The price by km</label>
+					  <div class="col-8">
+						  <input class="form-control price-by-km" type="number" id="PriceKM" placeholder="Price by km"/>
+					  </div>
+				  </div>
+				  <br/>
+				  <div class="row">
+					  <label for="PriceM3" class="col-4 col-form-label">The price by m3</label>
+					  <div class="col-8">
+						  <input class="form-control price-by-cubic" type="number" id="PriceM3" placeholder="Price by m3"/>
+					  </div>
+				  </div>
+				</div>
+			</form>
+		</div>
+	    <div class="col">
+			<form>
+				<div class="form-group" id="shipper">
+				  <input class="name" type="text" placeholder="Shipper name"/>
+				  <input class="distance" type="number" placeholder="Distance in km"/>
+				  <input class="volume" type="number" placeholder="Volume in m3"/>
+				  <input class="option" type="checkbox" placeholder="Deductible option"/>
+				</div>
+			</form>
+		</div>
+	  </div>
+	</div>
+	<button id="compute" class="btn btn-primary">Compute</button>
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
