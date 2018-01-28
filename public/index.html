@@ -6,15 +6,44 @@
 	<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navControl navbar navbar-inverse bg-primary">
-      <!-- Navbar content -->
-	  <img src="convargo.jpg" style="width:110px;height:30px;"/>
-    </nav>
+		<img src="Camion.png" style ="width:100%;height:450px"> 
+		<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+				<div class="row">
+			<div class="col-2">
+				<a class="navbar-brand" href="#">
+				<img src="convargo.jpg" style="width:110px;height:30px;"/>		
+				</a>
+			</div>
+			<div class="list col-1"><a  href="#AboutUs">About Us</a></div>
+			<div class="list col-1"><a  href="#pricing">Pricing</a></div>
+			<div class="list col-1"><a  href="#contactus">Contact Us</a></div>
+		</div>
+</nav>
+<br/>
+
+<center>
+	<div id="AboutUs" class="info alert alert-info" >
+		<h1> Welcome to Convargo </h1>
+			<p> 
+					Convargo is a fast-growing tech start-up that is revolutionizing road freight transport
+				  by connecting shippers and carriers in real time.
+					
+					The goods transport sector is a key sector of the economy - 42 billion euros in France and 300 billion in Europe - 
+					highly fragmented where technology and digitization are changing everything!
+					
+					Users range from TPE to large industrial group.
+				</p>
+		</div>
+	</center>
+
+	</center>
+	<div id="pricing">
     <div class="container">
       <div class="row">
 	    <div class="col">
 			<br/>
-			<form>
+
+			<form >
 				<div class="informations alert alert-info form-group" id="trucker">
 				  <center><h4> Trucker properties </h4></center>
 				  <br/>
@@ -78,13 +107,60 @@
 		</div>
 	  </div>
 	</div>
+</div>
 	<br/>
 	<div class="form-group row">
       <div class="offset-sm-5 col-sm-10" >
 	      <button id="compute" class="btn btn-primary" style="margin-left:53px;">Compute</button>
       </div>
-    </div>
-    <div class="result alert alert-success" id="actors"></div>
+   </div>
+		<div class="result alert alert-success" id="actors"></div>
+	
+		<div class="container" style="margin-left:30%">
+				<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="well well-sm">
+								<form id="contactus" class="form-horizontal" action="" method="post" >
+								<fieldset>
+									<legend class="text-center">Contact us</legend>
+					
+									<!-- Name input-->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="name">Name</label>
+										<div class="col-md-9">
+											<input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+										</div>
+									</div>
+					
+									<!-- Email input-->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="email">Your E-mail</label>
+										<div class="col-md-9">
+											<input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+										</div>
+									</div>
+					
+									<!-- Message body -->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="message">Your message</label>
+										<div class="col-md-9">
+											<textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+										</div>
+									</div>
+					
+									<!-- Form actions -->
+									<div class="form-group">
+										<div class="col-md-12 text-right">
+											<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+										</div>
+									</div>
+								</fieldset>
+								</form>
+							</div>
+						</div>
+				</div>
+			</div>
+	
     <script src="convargo.js"></script>
     <script src="index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

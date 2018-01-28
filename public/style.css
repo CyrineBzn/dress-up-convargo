@@ -13,3 +13,22 @@ h4{
 .navControl{
 	height:50px;
 }
+a{
+	color:black!important;
+	Font-Weight: Bold;
+	font-size: 100%
+}
+
+.list{
+	margin-top:10px;
+}
+#contactus{
+	background-color: #DCDCDC
+}
+.info{
+	width: 40%
+}
+h1{
+	color: black;
+	font-weight: bold;
+}
